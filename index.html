@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responisive Portfolio landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="banner" id="sec">
+      <header>
+        <a href="#" class="logo">Logo</a>
+        <div id="toggle" onclick="toggle()"></div>
+      </header>
+      <div class="content">
+        <h2>Hello World, <br />I 'm <span>Gusti Nur Islam</span></h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est magnam
+          maiores neque modi, enim ex libero eum corrupti sint repellat saepe
+          adipisci eligendi odio in rerum numquam, quas architecto vero Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Excepturi ab
+          deserunt atque. Delectus exercitationem repellendus, optio harum,
+          voluptatum mollitia ducimus dolorum inventore doloremque nam suscipit
+          ab nesciunt asperiores. Iusto, repellendus?
+        </p>
+        <a href="#">Know More</a>
+      </div>
+      <ul class="sci">
+        <li>
+          <a href="#"><img src="img/facebook.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/twitter.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/linkedin.png" /></a>
+        </li>
+      </ul>
+    </section>
+    <div id="navigation">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <script>
+      function toggle() {
+        let sec = document.getElementById("sec");
+        let nav = document.getElementById("navigation");
+        sec.classList.toggle("active");
+        nav.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
